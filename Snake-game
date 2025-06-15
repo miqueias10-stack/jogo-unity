@@ -1,0 +1,25 @@
+import math
+
+class Rana:
+    def __init__(self):
+        self.name = "Rana"
+        self.knowledge = {
+            "soma": self._soma,
+            "subtracao": self._subtracao,
+            "multiplicacao": self._multiplicacao,
+            "divisao": self._divisao,
+            "potencia": self._potencia,
+            "raiz quadrada": self._raiz_quadrada,
+            "area circulo": self._area_circulo,
+            "area retangulo": self._area_retangulo,
+            "perimetro retangulo": self._perimetro_retangulo,
+            "hipotenusa": self._hipotenusa,
+            "bhaskara": self._bhaskara
+        }
+        print(f"Olá! Eu sou a {self.name}, sua assistente de matemática.")
+        print("Posso te ajudar com operações básicas, geometria e equações de segundo grau.")
+        print("Tente perguntar coisas como 'Quanto é 5 + 3?', 'Calcule a área de um círculo com raio 7' ou 'Resolva a equação de Bhaskara 1 -5 6'.")
+
+    def _soma(self, num1, num2):
+        return num1 + num2
+
